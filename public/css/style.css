@@ -1,38 +1,82 @@
-header{
-    font-family: 'Roboto', sans-serif;
-    color: var(--amarillo)
+:root {
+  --amarillo: #eac926;
+  --azul: #03264c;
+  --celeste: #1259c3;
+  --gris-oscuro: #666;
+  --gris-claro: #ebebeb;
+  --verde: #39b54a;
+}
+/*------------------Header------------------------------*/
+header {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--amarillo);
 }
 
-:root{
---amarillo: #EAC926;
---azul: #03264C;
---celeste: #1259c3;
---gris-oscuro: #666;
---gris-claro: #ebebeb;
---verde: #39b54a;
-
+.texto {
+  font-size: 12px;
+  text-align: center;
+  border: 1px dotted #000;
+  padding: 8px;
 }
 
-.texto{
-    font-size: 12px; 
+.centro{
+    text-align: center;
 }
+.cuotas{
+    text-align: center;
+    font-size: 20px;
+}
+
+.burger-menu {                              /* caja div*/
+  color: var(--gris-claro);
+  text-align: center;
+  
+}
+
+.burguer {                              /*icono */
+    background-color: var(--celeste);
+    box-sizing: content-box;
+    border-radius: 10%;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    margin-bottom: 15px;
+    
+}
+
+
+/*-------------------------------------------------------------------------------*/
 .titulares {
-   font-size: 24px; 
+  font-size: 24px;
 }
 
-.precios{
-    font-size: 18px
+.precios {
+  font-size: 18px;
 }
 
-.descuentos{
-    font-size: 16px
+.descuentos {
+  font-size: 16px;
 }
 
-.descuento{
-    font-size: 16px
+.descuento {
+  font-size: 16px;
 }
 
-.descripciones{
-    font-size: 16px
+.descripciones {
+  font-size: 16px;
+}
+
+.iconos {
+  font-size: 24px;
+  color: var(--azul);
+}
+/*---------------------------FOOTER-------------------------------------------*/
+
+.facebook{
+    background-color: var(--celeste);
+    border-radius: 10%;
+    width: 20px;
+    height: 20px;
+    
 }
 
