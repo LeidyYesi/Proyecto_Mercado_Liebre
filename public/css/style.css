@@ -1,0 +1,38 @@
+header{
+    font-family: 'Roboto', sans-serif;
+    color: var(--amarillo)
+}
+
+:root{
+--amarillo: #EAC926;
+--azul: #03264C;
+--celeste: #1259c3;
+--gris-oscuro: #666;
+--gris-claro: #ebebeb;
+--verde: #39b54a;
+
+}
+
+.texto{
+    font-size: 12px; 
+}
+.titulares {
+   font-size: 24px; 
+}
+
+.precios{
+    font-size: 18px
+}
+
+.descuentos{
+    font-size: 16px
+}
+
+.descuento{
+    font-size: 16px
+}
+
+.descripciones{
+    font-size: 16px
+}
+
