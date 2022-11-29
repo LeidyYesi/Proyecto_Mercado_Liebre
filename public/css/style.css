@@ -45,7 +45,7 @@ header {
 }
 
 
-/*-------------------------------------------------------------------------------*/
+/*----------------------------Main--------------------------------------------*/
 .titulares {
   font-size: 24px;
 }
@@ -66,17 +66,24 @@ header {
   font-size: 16px;
 }
 
-.iconos {
-  font-size: 24px;
-  color: var(--azul);
-}
+
+
 /*---------------------------FOOTER-------------------------------------------*/
-
-.facebook{
-    background-color: var(--celeste);
-    border-radius: 10%;
-    width: 20px;
-    height: 20px;
-    
+.footer{
+  text-align:center;
+  box-sizing:border-box;
+  margin-top:  15px;
 }
 
+.iconos {
+  font-size: 50px;
+  color: var(--celeste);
+  text-align: center;
+}
+
+.informacion{
+  text-align: center;
+  padding-left: 38%;
+  height: 200px;
+  width: 300px; 
+}
