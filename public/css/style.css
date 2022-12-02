@@ -1,3 +1,6 @@
+@import url(normalize.css);
+
+
 :root {
   --amarillo: #eac926;
   --azul: #03264c;
@@ -12,16 +15,15 @@ header {
   background-color: var(--amarillo);
 }
 
+.medio{
+  width: 100vw;
+}
+
 .texto {
   font-size: 12px;
   text-align: center;
-  border: 1px dotted #000;
-  padding: 8px;
 }
 
-.centro{
-    text-align: center;
-}
 .cuotas{
     text-align: center;
     font-size: 20px;
@@ -50,6 +52,16 @@ header {
   font-size: 24px;
 }
 
+.centro{
+  margin: 3%;
+  padding: 10%;
+  border: 1px solid #000;
+}
+
+.img{
+  width: 80%;
+}
+
 .precios {
   font-size: 18px;
 }
@@ -72,18 +84,27 @@ header {
 .footer{
   text-align:center;
   box-sizing:border-box;
+  width: 90%;
   margin-top:  15px;
 }
 
 .iconos {
-  font-size: 50px;
+  font-size: 2em;
   color: var(--celeste);
   text-align: center;
+  margin-top:  10px;
 }
 
 .informacion{
   text-align: center;
-  padding-left: 38%;
-  height: 200px;
-  width: 300px; 
+  font-size: 15px;
+  width: 70%;
+  padding: 10%;
+  margin: auto;
+}
+
+.contenedor-footer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: center;
 }
