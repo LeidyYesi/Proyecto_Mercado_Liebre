@@ -1,5 +1,12 @@
 @import url(normalize.css);
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+}
 
 :root {
   --amarillo: #eac926;
@@ -10,12 +17,16 @@
   --verde: #39b54a;
 }
 /*------------------Header------------------------------*/
-header {
+.main-header {
   font-family: "Roboto", sans-serif;
   background-color: var(--amarillo);
+  padding: 20px;
 }
 
-.medio{
+.logo-ml {
+  width: 150px;
+}
+.medio {
   width: 100vw;
 }
 
@@ -24,42 +35,73 @@ header {
   text-align: center;
 }
 
-.cuotas{
-    text-align: center;
-    font-size: 20px;
+.cuotas {
+  max-width: none;
+  text-align: center;
+  font-size: 20px;
 }
 
-.burger-menu {                              /* caja div*/
+.main-nav {
+  display: none;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #080808;
+  display: inline-block;
+  padding: 5px 0;
+}
+
+.burger-menu {
+  /* caja div*/
   color: var(--gris-claro);
   text-align: center;
-  
 }
 
-.burguer {                              /*icono */
-    background-color: var(--celeste);
-    box-sizing: content-box;
-    border-radius: 10%;
-    width: 20px;
-    height: 20px;
-    padding: 10px;
-    margin-bottom: 15px;
-    
+.burguer {
+  /*icono */
+  background-color: var(--celeste);
+  box-sizing: content-box;
+  border-radius: 10%;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  margin-bottom: 15px;
 }
-
 
 /*----------------------------Main--------------------------------------------*/
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  justify-content: center;
+  background-color: var(--gris-claro);
+}
+
 .titulares {
   font-size: 24px;
 }
 
-.centro{
-  margin: 3%;
-  padding: 10%;
-  border: 1px solid #000;
+.img {
+  width: 100%;
 }
 
-.img{
-  width: 80%;
+.centro {
+  padding: 15px;
+  border: 15px;
+}
+
+.articulos {
+  padding: 15px;
+  border: 15px;
+  border-top: 1px solid var(--gris-claro);
 }
 
 .precios {
@@ -68,34 +110,30 @@ header {
 
 .descuentos {
   font-size: 16px;
+  color: var(--verde)
 }
 
-.descuento {
+h3 {
   font-size: 16px;
+  display: none;
 }
-
-.descripciones {
-  font-size: 16px;
-}
-
-
 
 /*---------------------------FOOTER-------------------------------------------*/
-.footer{
-  text-align:center;
-  box-sizing:border-box;
+.footer {
+  text-align: center;
+  box-sizing: border-box;
   width: 90%;
-  margin-top:  15px;
+  margin-top: 15px;
 }
 
 .iconos {
   font-size: 2em;
   color: var(--celeste);
   text-align: center;
-  margin-top:  10px;
+  margin-top: 10px;
 }
 
-.informacion{
+.informacion {
   text-align: center;
   font-size: 15px;
   width: 70%;
@@ -103,8 +141,100 @@ header {
   margin: auto;
 }
 
-.contenedor-footer{
+.contenedor-footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: center;
+}
+
+/*----------------MediaQuire---------------------*/
+
+/*-------------------------Tablet-----------------------------------------------*/
+/*header*/
+@media (min-width: 450px) {
+  .main-header-top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cuotas {
+    max-width: 200px;
+    text-align: right;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav ul {
+    display: flex;
+  }
+
+  .main-nav li {
+    margin: 0 5px;
+  }
+  h3 {
+    display: flex;
+  }
+}
+
+/*main*/
+.shadow {
+  box-shadow: 0px 0px 10px rgb(114, 34, 34);
+}
+
+/*----------------------------------------Laptop------------------------------------------------*/
+/*header*/
+
+@media (min-width: 768px) {
+  .main-header-top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cuotas {
+    max-width: none;
+    text-align: right;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav ul {
+    display: flex;
+  }
+
+  .main-nav li {
+    margin: 0 5px;
+  }
+
+  h3 {
+    display: flex;
+  }
+}
+
+/*main*/
+.articulos {
+  box-shadow: 0px 0px 10px rgb(114, 34, 34);
+}
+
+@media (min-width: 1200px) {
+  .main-header-top-bar,
+  .main-nav {
+    max-width: 1200px;
+    margin: auto;
+  }
 }
