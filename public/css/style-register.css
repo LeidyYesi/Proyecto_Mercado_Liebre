@@ -1,0 +1,54 @@
+/*------------header-------------------*/
+@import url(normalize.css);
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+:root {
+  --amarillo: #eac926;
+  --azul: #03264c;
+  --celeste: #1259c3;
+  --gris-oscuro: #666;
+  --gris-claro: #ebebeb;
+  --verde: #39b54a;
+}
+/*------------------Header------------------------------*/
+.main-header {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--amarillo);
+  padding: 20px;
+}
+
+.logo-ml {
+  width: 150px;
+}
+.medio {
+  width: 100%;
+}
+.text-reg{
+    text-align: center;
+}
+/*--------Formu de registro---------------*/
+.crear-formu {
+  padding: 20px 15px;
+}
+.control-formu {
+  margin-bottom: 15px;
+}
+.control-formu label {
+  margin-bottom: 5px;
+  font-style: italic;
+  display: block;
+  justify-content: center;
+}
+.submit {
+  background-color: var(--azul);
+  border: #666;
+}

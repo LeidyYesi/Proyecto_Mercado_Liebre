@@ -1,8 +1,24 @@
 @import url(normalize.css);
 
-* {
+/**{
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
-}
+  }*/
+
+ .main section article div i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    }
 
 body {
   font-family: "Roboto";
@@ -27,7 +43,7 @@ body {
   width: 150px;
 }
 .medio {
-  width: 100vw;
+  width: 100%;
 }
 
 .texto {
@@ -38,7 +54,7 @@ body {
 .cuotas {
   max-width: none;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .main-nav {
@@ -94,8 +110,12 @@ main {
 }
 
 .centro {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
   padding: 15px;
-  border: 15px;
+  border-top: 1px solid var(--gris-claro);
 }
 
 .articulos {
