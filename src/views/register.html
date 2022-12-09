@@ -67,6 +67,19 @@
           <option value= "Pam">La pampa</option>  
           </select>
         </div>
+        <div class="control-formu">
+          <label>Intereses</label>
+          <select name="Interes">
+          <option> Electro</option>
+          <option> Moda</option> 
+          <option> Hogar</option> 
+          <option> Juguetería</option> 
+          <option> Vida sana</option> 
+          </select>
+          <div class="control-formu">
+            <label>Foto de Usuario</label>
+            <input type="file" name="Foto"  accept=".jpg" />
+          </div>
         <div class="control-formu"> 
           <label>Correo Electronico</label>
           <input type="email" name="email" id="email" required />
@@ -76,11 +89,13 @@
           <input type="password" name="password" id="password" required />
         </div>
         <div class="control-formu">
-          <div>
-            <label for="terminos"> Acepto los terminos y condiciones.</label>
-            <input type="checkbox" name="terminos" required>
-        </divclass="control-formu">
+          <label>Confirmar Contraceña</label>
+          <input type="password" name="password" id="password" required />
+        </div>
+        <div class="control-formu">
+        <div>
           <input type="submit" name="Enviar" id="Enviar" class="submit"/>
+          <input type="Borrar" name="Borrar" id="Borrar" class="submit"/>
         </div>
       </form>
     </section>

@@ -1,12 +1,12 @@
 @import url(normalize.css);
 
-/**{
+*{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  }*/
+  }
 
- .main section article div i{
+ .camion{
     display: block;
     font-size: 16px;
     padding: 5px;
@@ -15,7 +15,7 @@
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%;
-    position: absolute;
+    /*position: absolute;*/
     right: 20px;
     top: -15px;
     }
@@ -36,7 +36,6 @@ body {
 .main-header {
   font-family: "Roboto", sans-serif;
   background-color: var(--amarillo);
-  padding: 20px;
 }
 
 .logo-ml {
@@ -126,16 +125,34 @@ main {
 
 .precios {
   font-size: 18px;
+  width: 30%;
 }
 
 .descuentos {
   font-size: 16px;
-  color: var(--verde)
+  color: var(--verde);
+  width: 70%;
+}
+.precio-descuento{
+display: flex;
 }
 
 h3 {
   font-size: 16px;
   display: none;
+}
+.main section article i{
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30 px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #FFF;
+  border-radius: 50%; 
+  position: absolute;
+  right: 20px;
+  top: -15px;
 }
 
 /*---------------------------FOOTER-------------------------------------------*/
@@ -147,10 +164,10 @@ h3 {
 }
 
 .iconos {
-  font-size: 2em;
+  font-size: 3em;
   color: var(--celeste);
   text-align: center;
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .informacion {

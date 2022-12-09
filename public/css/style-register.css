@@ -51,4 +51,9 @@ body {
 .submit {
   background-color: var(--azul);
   border: #666;
+  color: #000;
+  transition-property:
+background-color, color ;
+  transition-duration: 0.5;
 }
+
