@@ -1,7 +1,7 @@
 /*------------header-------------------*/
 @import url(normalize.css);
 
-*{
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -32,28 +32,50 @@ body {
 .medio {
   width: 100%;
 }
-.text-reg{
-    text-align: center;
+.text-reg {
+  text-align: center;
 }
-/*--------Formu de registro---------------*/
+/*---------Main----------------------------*/
+
+/*---Formu de registro---*/
+
+main {
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #e5e5f7 10px
+    ),
+    repeating-linear-gradient(#94969955, #949699);
+}
 .crear-formu {
   padding: 20px 15px;
+  border-radius: 4%;
+  margin: 8% 15%;
+  background-color: var(--gris-claro);
 }
 .control-formu {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .control-formu label {
   margin-bottom: 5px;
   font-style: italic;
   display: block;
-  justify-content: center;
 }
-.submit {
-  background-color: var(--azul);
-  border: #666;
-  color: #000;
-  transition-property:
-background-color, color ;
-  transition-duration: 0.5;
+.checkbox{
+  padding: 5px 0;
 }
 
+.control {
+  width: 100%;
+  padding: 8px;
+}
+
+.boton-formu {
+  background-color: var(--celeste);
+  font-size: 20px;
+  color: var(--gris-claro);
+  padding: 5px 10px;
+  border-radius: 5px;
+}

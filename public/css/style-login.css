@@ -1,6 +1,7 @@
+/*------------header-------------------*/
 @import url(normalize.css);
 
-* {
+*{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -19,6 +20,7 @@ body {
   --verde: #39b54a;
 }
 /*------------------Header------------------------------*/
+
 .main-header {
   font-family: "Roboto", sans-serif;
   background-color: var(--amarillo);
@@ -83,93 +85,50 @@ body {
   padding: 10px;
   margin-bottom: 15px;
 }
-
-/*----------------------------Main--------------------------------------------*/
+/*------------------------Main--------------------*/
+/*---Formu de registro---*/
 
 main {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #e5e5f7 10px
+    ),
+    repeating-linear-gradient(#94969955, #949699);
+}
+.crear-formu {
+  padding: 20px 15px;
+  border-radius: 4%;
+  margin: 8% 15%;
   background-color: var(--gris-claro);
 }
-
-.titulares {
-  font-size: 24px;
-  margin-block: 15px;
+.control-formu {
+  margin-bottom: 20px;
+}
+.control-formu label {
+  margin-bottom: 5px;
+  font-style: italic;
+  display: block;
 }
 
-.img {
+.control {
   width: 100%;
+  padding: 8px;
 }
 
-.centro {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 15px;
-  border-top: 1px solid var(--gris-claro);
-}
-.camion {
-  display: block;
-  font-size: 16px;
-  padding: 5px;
-  width: 30px;
-  height: 30px;
-  border: 1px solid #39b54a;
-  background-color: #fff;
-  border-radius: 50%;
-  /*position: absolute;*/
-  right: 20px;
-  top: -15px;
+.boton-formu {
+  width: 100%;
+  background: var(--celeste);
+  font-size: 20px;
+  color: var(--gris-claro);
+  padding: 7px;
+  border-radius: 5px;
+  margin: 15px 0;
 }
 
-.articulos {
-  padding: 15px;
-  border: 15px;
-  border-top: 1px solid #ebebeb;
-}
 
-.precios {
-  font-size: 18px;
-  width: 30%;
-}
-
-.descuentos {
-  font-size: 16px;
-  color: var(--verde);
-  width: 70%;
-}
-.precio-descuento {
-  display: flex;
-}
-
-.wrap-dinamico {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.wrap-dinamico article {
-  width: 80%;
-}
-
-h3 {
-  font-size: 16px;
-  display: none;
-}
-.main section article i {
-  display: block;
-  font-size: 16px;
-  padding: 5px;
-  width: 30 px;
-  height: 30px;
-  border: 1px solid #39b54a;
-  background-color: #fff;
-  border-radius: 50%;
-  position: absolute;
-  right: 20px;
-  top: -15px;
-}
 
 /*---------------------------FOOTER-------------------------------------------*/
 .footer {
@@ -244,18 +203,9 @@ h3 {
   h3 {
     display: flex;
   }
-
-  /*---------------main----------------------*/
-
-  .articulos {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-  }
-
-  .wrap-dinamico article {
-    width: 45%;
-  }
 }
-/*----------------------------------------Laptop------------------------------------------------*/
+
+  /*----------------------------------------Laptop------------------------------------------------*/
 /*header*/
 
 @media (min-width: 769px) {
@@ -301,20 +251,4 @@ h3 {
     display: flex;
   }
 
-  /*main*/
-  .articulos {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-  }
-
-  .wrap-dinamico article {
-    width: 20%;
-  }
 }
-/*@media (min-width: 1200px) {
-  .main-header-top-bar,
-  .main-nav {
-    max-width: 1200px;
-    margin: auto;
-  }
-  
-}*/

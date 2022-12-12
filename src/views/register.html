@@ -22,9 +22,10 @@
       src="https://kit.fontawesome.com/fa6449574a.js"
       crossorigin="anonymous"
     ></script>
-
+    <!--Link de fondo-->
+    
     <!--Link Css-->
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/style-register.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <header class="main-header">
@@ -42,22 +43,23 @@
       <form action="/register" method="POST" class="crear-formu">
         <div class="control-formu">
           <label>Nombre </label>
-          <input type="text" name="Nombre" id="Nombre" required />
+          <input type="text" name="Nombre" id="Nombre" placeholder="Nombre" required class="control"/>
         </div>
         <div class="control-formu">
           <label>Apellido</label>
-          <input type="text" name="Pellido" id="Apellido" required />
+          <input type="text" name="Pellido" id="Apellido" placeholder="Apellido" required class="control"/>
         </div>
+        <div class="control-formu">
         <label>Nombre de usuari@</label>
-          <input type="text" name="Nombre" id="Nombre" required />
+          <input type="text" name="Nombre" id="Nombre" placeholder="Usuario" required class="control"/>
         </div>
         <div class="control-formu">
           <label>Fecha de Nacimiento</label>
-          <input type="date" name="Fecha de Nacimiento"  id="Fecha"  value="1989-04-09"  required />
+          <input type="date" name="Fecha de Nacimiento"  id="Fecha"  value="aaaa-mm-dd"  required class="control"/>
         </div>
         <div class="control-formu">
           <label>Domicilio</label>
-          <input type="text" name="Domicilio"  id="Domicilio"   required />
+          <input type="text" name="Domicilio"  id="Domicilio"  placeholder="Calle N°" required class="control"/>
           <select name="Provincia">
           <option value= "Bs As">Buenos Aires</option>
           <option value="Cor"> Cordoba</option> 
@@ -68,21 +70,26 @@
           </select>
         </div>
         <div class="control-formu">
-          <label>Intereses</label>
-          <select name="Interes">
-          <option> Electro</option>
-          <option> Moda</option> 
-          <option> Hogar</option> 
-          <option> Juguetería</option> 
-          <option> Vida sana</option> 
-          </select>
-          <div class="control-formu">
-            <label>Foto de Usuario</label>
-            <input type="file" name="Foto"  accept=".jpg" />
+          <label for="Tipo de usuario">Perfil del usuario</label>
+          <input type="checkbox" name="Comprar"> Comprar
+          <input type="checkbox" name="Vender"> Vender
+        </div>
+        <div>
+          <label for="Intereses" class="control-formu">Intereses</label>
+          <input type="checkbox" name="Electro"> Electro
+          <input type="checkbox" name="Moda" > Moda
+          <input type="checkbox" name="Hogar"> Hogar
+          <input type="checkbox" name="Juguetería" > Juguetería
+          <input type="checkbox" name="Vida sana" > Vida sana
           </div>
+          <br>
+        <div class="control-formu">
+          <label>Foto de Usuario</label>
+          <input type="file" name="Foto"  accept=".jpg" />
+        </div>
         <div class="control-formu"> 
           <label>Correo Electronico</label>
-          <input type="email" name="email" id="email" required />
+          <input type="email" name="email" id="email" placeholder="qwerty@.com" required class="control"/>
         </div>
         <div class="control-formu">
           <label>Contraceña</label>
@@ -94,8 +101,9 @@
         </div>
         <div class="control-formu">
         <div>
-          <input type="submit" name="Enviar" id="Enviar" class="submit"/>
-          <input type="Borrar" name="Borrar" id="Borrar" class="submit"/>
+          <button type="submit" class="boton-formu"> Borrar </button>
+          <button type="submit" class="boton-formu"> <a href="/">Enviar</a> </button>
+          
         </div>
       </form>
     </section>
