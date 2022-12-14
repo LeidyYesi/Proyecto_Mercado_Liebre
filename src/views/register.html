@@ -29,50 +29,76 @@
   </head>
   <body>
     <header class="main-header">
-        <div class="main-header-top-bar">
-        <img src="/img/logo-mercado-liebre.svg" width="360" alt="Logo" class="logo-ml"/>
-
-        <section class="text-reg">
-          <h1>Registrarse o iniciar secion</h1>
-      </section>
-
+      <div class="main-header-top-bar">
+        <img src="/img/logo-mercado-liebre.svg" width="360" alt="Logo" class="logo-ml" />
+        
+        <div class ="barra-de-busqueda">
+          <input type="text" name="Busqueda" id="Busqueda" placeholder="Busqueda" >   <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    
+        <p class="cuotas">
+            <i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin tarjeta de crédito  
+        </p>
+      </div>
+    
+        <nav class="main-nav">
+          <ul class="nav-izquierdo">
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Tiendas Oficiales</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Ayuda</a></li>
+          </ul>
+    
+          <ul class="nav-derecho">
+            <li>
+              <a href="/register">Creá tu cuenta <i class="fa-regular fa-address-card"></i></a>
+            </li>
+            <li>
+              <a href="/login">Ingresar <i class="fa-solid fa-right-to-bracket"></i></a>
+            </li>
+            <li>
+              <a href="#">Mis compras <i class="fa-solid fa-basket-shopping"></i></a>
+            </li>
+          </ul>
+        </nav>
+    
+        <div class="burger-menu">
+          <i class="fas fa-bars burguer"></i>
+        </div>
+    
       </header>
   <main>
 
-        <section>
+        <section class="contenedor-formu">
       <form action="/register" method="POST" class="crear-formu">
         <div class="control-formu">
-          <label>Nombre </label>
           <input type="text" name="Nombre" id="Nombre" placeholder="Nombre" required class="control"/>
         </div>
         <div class="control-formu">
-          <label>Apellido</label>
-          <input type="text" name="Pellido" id="Apellido" placeholder="Apellido" required class="control"/>
+          <input type="text" name="Apellido" id="Apellido" placeholder="Apellido" required class="control"/>
         </div>
         <div class="control-formu">
-        <label>Nombre de usuari@</label>
-          <input type="text" name="Nombre" id="Nombre" placeholder="Usuario" required class="control"/>
+          <input type="text" name="Nombre de usuari@" id="Nombre de usuari@" placeholder="Nombre de usuari@" required class="control"/>
         </div>
         <div class="control-formu">
           <label>Fecha de Nacimiento</label>
           <input type="date" name="Fecha de Nacimiento"  id="Fecha"  value="aaaa-mm-dd"  required class="control"/>
         </div>
         <div class="control-formu">
-          <label>Domicilio</label>
           <input type="text" name="Domicilio"  id="Domicilio"  placeholder="Calle N°" required class="control"/>
           <select name="Provincia">
-          <option value= "Bs As">Buenos Aires</option>
+          <option value= "Bs As"> Buenos Aires</option>
           <option value="Cor"> Cordoba</option> 
-          <option value= "Mis">Misiones</option> 
+          <option value= "Mis"> Misiones</option> 
           <option value= "Neu"> Neuquen</option> 
           <option value= "Sal"> Salta</option> 
-          <option value= "Pam">La pampa</option>  
+          <option value= "Pam"> La pampa</option>  
           </select>
         </div>
         <div class="control-formu">
           <label for="Tipo de usuario">Perfil del usuario</label>
-          <input type="checkbox" name="Comprar"> Comprar
-          <input type="checkbox" name="Vender"> Vender
+          <input type="radio" name="Comprar">   Comprar
+          <input type="radio" name="Vender">   Vender
         </div>
         <div>
           <label for="Intereses" class="control-formu">Intereses</label>

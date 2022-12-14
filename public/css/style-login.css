@@ -91,17 +91,25 @@ body {
 main {
   background-color: #e5e5f7;
   opacity: 0.8;
-  background-image: repeating-radial-gradient(
+  background-size: 20%;
+  /*background-image: repeating-radial-gradient(
       circle at 0 0,
       transparent 0,
       #e5e5f7 10px
     ),
     repeating-linear-gradient(#94969955, #949699);
+*/
+  }
+.contenedor-formu{
+padding: 8%
 }
+a{
+  color: var(--gris-claro);
+  text-decoration: none;
+}
+
 .crear-formu {
-  padding: 20px 15px;
   border-radius: 4%;
-  margin: 8% 15%;
   background-color: var(--gris-claro);
 }
 .control-formu {
@@ -115,7 +123,7 @@ main {
 
 .control {
   width: 100%;
-  padding: 8px;
+  padding: 5px;
 }
 
 .boton-formu {
@@ -131,11 +139,12 @@ main {
 
 
 /*---------------------------FOOTER-------------------------------------------*/
-.footer {
+footer {
+
   text-align: center;
   box-sizing: border-box;
   width: 90%;
-  margin-top: 15px;
+  margin-top: 15%;
 }
 
 .iconos {
@@ -203,6 +212,15 @@ main {
   h3 {
     display: flex;
   }
+}
+/*---------main---------*/
+
+.crear-formu{
+  padding: 33px 15px;
+  border-radius: 4%;
+  margin:  0% 15%;
+  background-color: var(--gris-claro);
+  border: 1px solid var(--gris-oscuro)
 }
 
   /*----------------------------------------Laptop------------------------------------------------*/

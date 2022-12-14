@@ -22,8 +22,12 @@ app.get("/register", (req, res) => {
     res.sendFile(path.resolve(__dirname, "./views/login.html"));
   });
 
-
-  // Ponemos a escuchar el servidor
-app.listen(3033, () => {
-    console.log("Servidor corriendo en http://localhost:3033")
+const port = process.env.PORT || 3000;
+ app.listen(port, () => {
+     console.log("Servidor corriendo en http://localhost:" + port)
 });
+
+// Ponemos a escuchar el servidor
+/*app.listen(3033, () => {
+console.log("Servidor corriendo en http://localhost:3033")
+});*/

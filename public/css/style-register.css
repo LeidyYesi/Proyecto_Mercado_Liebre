@@ -23,17 +23,66 @@ body {
 .main-header {
   font-family: "Roboto", sans-serif;
   background-color: var(--amarillo);
-  padding: 20px;
 }
 
+.main-header-top-bar {
+  display: flex;
+  flex-wrap: wrap;
+}
 .logo-ml {
-  width: 150px;
+  width: 50%;
+}
+
+.barra-de-busqueda {
+  width: 50%;
 }
 .medio {
   width: 100%;
 }
-.text-reg {
+
+.texto {
+  font-size: 12px;
   text-align: center;
+}
+
+.cuotas {
+  max-width: none;
+  text-align: center;
+  font-size: 17px;
+  padding: 2%;
+}
+
+.main-nav {
+  display: none;
+}
+
+.main-nav ul {
+  list-style: none;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #080808;
+  display: inline-block;
+  padding: 5px 0;
+}
+
+.burger-menu {
+  /* caja div*/
+  color: var(--gris-claro);
+  text-align: center;
+  padding: 2%;
+}
+
+.burguer {
+  /*icono */
+  background-color: var(--celeste);
+  box-sizing: content-box;
+  border-radius: 10%;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  margin-bottom: 15px;
 }
 /*---------Main----------------------------*/
 
@@ -42,17 +91,21 @@ body {
 main {
   background-color: #e5e5f7;
   opacity: 0.8;
-  background-image: repeating-radial-gradient(
+  /*background-image: repeating-radial-gradient(
       circle at 0 0,
       transparent 0,
       #e5e5f7 10px
     ),
     repeating-linear-gradient(#94969955, #949699);
-}
+*/
+  }
+
+  .contenedor-formu{
+    padding: 8%
+    }
+
 .crear-formu {
-  padding: 20px 15px;
   border-radius: 4%;
-  margin: 8% 15%;
   background-color: var(--gris-claro);
 }
 .control-formu {
@@ -78,4 +131,111 @@ main {
   color: var(--gris-claro);
   padding: 5px 10px;
   border-radius: 5px;
+}
+
+a{
+  color: var(--gris-claro);
+  text-decoration: none;
+}
+/*----------------MediaQuire---------------------*/
+
+/*-------------------------Tablet-----------------------------------------------*/
+/*header*/
+@media (min-width: 400px) {
+  .main-header-top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .logo-ml {
+    width: 30%;
+  }
+
+  .barra-de-busqueda {
+    width: 30%;
+  }
+  .cuotas {
+    width: 40%;
+    text-align: right;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+
+  .main-nav ul {
+    display: flex;
+  }
+
+  .main-nav a {
+    margin: 0 5px;
+  }
+
+  h3 {
+    display: flex;
+  }
+}
+/*---------main-------*/
+
+.crear-formu {
+  padding: 6%;
+  border-radius: 4%;
+  background-color: var(--gris-claro);
+  border: 1px solid var(--gris-oscuro)
+
+}
+
+  /*----------------------------------------Laptop------------------------------------------------*/
+/*header*/
+
+@media (min-width: 769px) {
+  .main-header-top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .logo-ml {
+    width: 30%;
+  }
+
+  .barra-de-busqueda {
+    width: 30%;
+    text-align: center;
+  }
+  .cuotas {
+    width: 40%;
+    text-align: right;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .main-nav {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+  }
+
+  .main-nav ul {
+    display: flex;
+    font-size: 20px;
+  }
+
+  .main-nav a {
+    margin: 0 15px;
+  }
+
+  h3 {
+    display: flex;
+  }
+
 }
