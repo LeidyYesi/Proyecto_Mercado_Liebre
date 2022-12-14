@@ -27,22 +27,21 @@ body {
 .main-header-top-bar {
   display: flex;
   flex-wrap: wrap;
-  
+  justify-content: space-between;
 }
 .logo-ml {
-  width: 50%;
+  width: 40%;
 }
 
 .barra-de-busqueda {
   width: 50%;
-}
-.medio {
-  width: 100%;
+  padding: 2%;
+  border-radius: 0.3%;
+  display: inline-block;
 }
 
-.texto {
-  font-size: 12px;
-  text-align: center;
+.medio {
+  width: 100%;
 }
 
 .cuotas {
@@ -170,41 +169,48 @@ h3 {
   display: none;
 }
 
+article:hover h3{
+  display: flex;
+  font-size: 14px;
+}
 
 /*---------------------------FOOTER-------------------------------------------*/
-.footer {
-  text-align: center;
-  box-sizing: border-box;
-  width: 90%;
-  margin-top: 15px;
+.contenedor-footer {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 
 .iconos {
   font-size: 3em;
-  color: var(--celeste);
   text-align: center;
-  margin-bottom: 10px;
+  margin-top: 15px;
 }
 
 .informacion {
   text-align: center;
   font-size: 15px;
-  width: 70%;
+  width: 100%;
   padding: 10%;
-  margin: auto;
 }
 
-.contenedor-footer {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: center;
+h4{
+  font-size: 13px;
 }
+
+.texto {
+  font-size: 12px;
+  text-align: center;
+}
+
+
+
 
 /*----------------MediaQuire---------------------*/
 
 /*-------------------------Tablet-----------------------------------------------*/
-/*header*/
-@media (min-width: 400px) {
+/*--------header--------*/
+@media (min-width: 425px) {
   .main-header-top-bar {
     display: flex;
     flex-wrap: wrap;
@@ -243,7 +249,6 @@ h3 {
 
   /*---------------main----------------------*/
 
-
   .articulos {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
@@ -266,14 +271,15 @@ h3 {
     display: flex;
   }
 
-h3 {
+article:hover h3{
   display: flex;
   font-size: 14px;
 }
 
+
 }
 /*----------------------------------------Laptop------------------------------------------------*/
-/*header*/
+/*-----------header------------*/
 
 @media (min-width: 769px) {
   .main-header-top-bar {
@@ -303,6 +309,7 @@ h3 {
     display: flex;
     justify-content: space-around;
     font-size: 20px;
+    padding: 2%;
   }
 
   .main-nav ul {
@@ -314,11 +321,8 @@ h3 {
     margin: 0 15px;
   }
 
-  h3 {
-    display: flex;
-  }
 
-  /*main*/
+/*-------------main----------------*/
   .articulos {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
@@ -326,12 +330,57 @@ h3 {
   .wrap-dinamico article {
     width: 20%;
   }
+
+  article:hover h3{
+    display: flex;
+    font-size: 14px;
+  }
+
+/*---------Footer--------*/
+
+footer {
+  text-align: center;
+  box-sizing: border-box;
+  width: 90%;
+  margin-top: 15px;
 }
-/*@media (min-width: 1200px) {
+
+.iconos {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 10px;
+  color: var(--celeste);
+}
+
+.iconos:hover i{
+  color: var(--amarillo);
+}
+
+h4{
+  font-size: 13px;
+}
+.informacion {
+  text-align: center;
+  font-size: 15px;
+  width: 70%;
+  padding: 10%;
+  margin: auto;
+}
+
+.contenedor-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+}
+
+}
+
+@media (min-width: 1200px) {
   .main-header-top-bar,
   .main-nav {
     max-width: 1200px;
     margin: auto;
   }
   
-}*/
+}
