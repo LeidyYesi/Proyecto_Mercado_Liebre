@@ -142,33 +142,33 @@ a{
 
 
 /*---------------------------FOOTER-------------------------------------------*/
-footer {
-
-  text-align: center;
-  box-sizing: border-box;
-  width: 90%;
-  margin-top: 15%;
+.contenedor-footer {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 
 .iconos {
   font-size: 3em;
-  color: var(--celeste);
   text-align: center;
   margin-bottom: 10px;
+  color: var(--celeste);
 }
 
 .informacion {
   text-align: center;
   font-size: 15px;
-  width: 70%;
-  padding: 10%;
-  margin: auto;
+  width: 100%;
+  padding: 5%;
 }
 
-.contenedor-footer {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: center;
+h4{
+  font-size: 13px;
+}
+
+.texto {
+  font-size: 12px;
+  text-align: center;
 }
 
 /*----------------MediaQuire---------------------*/
@@ -271,5 +271,49 @@ footer {
   h3 {
     display: flex;
   }
+/*-----------------footer-----*/
+footer {
+  text-align: center;
+  box-sizing: border-box;
+  width: 90%;
+  margin-top: 15px;
+}
 
+.iconos {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 10px;
+  color: var(--celeste);
+}
+
+.iconos:hover i{
+  color: var(--amarillo);
+}
+
+h4{
+  font-size: 13px;
+}
+.informacion {
+  text-align: center;
+  font-size: 15px;
+  width: 70%;
+  padding: 5%;
+  margin: auto;
+}
+
+.contenedor-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+}
+
+@media (min-width: 1200px) {
+  .main-header-top-bar,
+  .main-nav {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
 }

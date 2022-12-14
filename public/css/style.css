@@ -184,14 +184,15 @@ article:hover h3{
 .iconos {
   font-size: 3em;
   text-align: center;
-  margin-top: 15px;
+  margin-bottom: 10px;
+  color: var(--celeste);
 }
 
 .informacion {
   text-align: center;
   font-size: 15px;
   width: 100%;
-  padding: 10%;
+  padding: 5%;
 }
 
 h4{
@@ -363,7 +364,7 @@ h4{
   text-align: center;
   font-size: 15px;
   width: 70%;
-  padding: 10%;
+  padding: 5%;
   margin: auto;
 }
 
