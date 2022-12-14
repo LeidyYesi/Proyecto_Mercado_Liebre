@@ -133,7 +133,7 @@ main {
 
 .precios {
   font-size: 18px;
-  width: 30%;
+  width: 50%;
 }
 
 .descuentos {
@@ -205,7 +205,7 @@ h3 {
 
 /*-------------------------Tablet-----------------------------------------------*/
 /*header*/
-@media (min-width: 400px) {
+@media (min-width: 380px) {
   .main-header-top-bar {
     display: flex;
     flex-wrap: wrap;
@@ -247,6 +247,7 @@ h3 {
   }
 
   /*---------------main----------------------*/
+
 
   .articulos {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
