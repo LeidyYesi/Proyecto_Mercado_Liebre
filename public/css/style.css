@@ -110,6 +110,7 @@ main {
   padding: 15px;
   border-top: 1px solid var(--gris-claro);
 }
+
 .camion {
   display: block;
   font-size: 16px;
@@ -122,6 +123,16 @@ main {
   position: absolute;
   right: 20px;
   top: -15px;
+  transition: transform 0.5s;
+}
+
+.centro:hover .camion{
+  transform: rotate(-90deg);
+
+}
+
+.sombra:hover{
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 .articulos {
@@ -158,19 +169,7 @@ h3 {
   font-size: 16px;
   display: none;
 }
-.main section article i {
-  display: block;
-  font-size: 16px;
-  padding: 5px;
-  width: 30 px;
-  height: 30px;
-  border: 1px solid #39b54a;
-  background-color: #fff;
-  border-radius: 50%;
-  position: absolute;
-  right: 20px;
-  top: -15px;
-}
+
 
 /*---------------------------FOOTER-------------------------------------------*/
 .footer {
@@ -205,7 +204,7 @@ h3 {
 
 /*-------------------------Tablet-----------------------------------------------*/
 /*header*/
-@media (min-width: 380px) {
+@media (min-width: 400px) {
   .main-header-top-bar {
     display: flex;
     flex-wrap: wrap;
@@ -242,10 +241,6 @@ h3 {
     margin: 0 5px;
   }
 
-  h3 {
-    display: flex;
-  }
-
   /*---------------main----------------------*/
 
 
@@ -256,6 +251,26 @@ h3 {
   .wrap-dinamico article {
     width: 45%;
   }
+
+  .precios {
+    font-size: 18px;
+    width: 50%;
+  }
+  
+  .descuentos {
+    font-size: 16px;
+    color: var(--verde);
+    width: 70%;
+  }
+  .precio-descuento {
+    display: flex;
+  }
+
+h3 {
+  display: flex;
+  font-size: 14px;
+}
+
 }
 /*----------------------------------------Laptop------------------------------------------------*/
 /*header*/
