@@ -33,11 +33,14 @@ body {
   width: 40%;
 }
 
-.barra-de-busqueda {
+.barra-de-busqueda input{
   width: 50%;
   padding: 2%;
-  border-radius: 0.3%;
+  margin-top: 10px;
+  border-radius: 4px;
   display: inline-block;
+  border: none;
+  background-color: var(--gris-claro);
 }
 
 .medio {
